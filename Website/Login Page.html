@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Login Page/Login Page.css" type="text/css">
+    <link rel="icon" type="image/png" href="Icon/Favicon1.png" />
+
+
+</head>
+
+
+<section class="sec2">
+
+
+    <body link="white">
+
+
+
+
+        <span class="main-t2" align="center">
+
+            <span align="" class="intro2">TAB SCROLL TO <span class="red2"><br>LOGIN</span></span>
+
+            <div class="mbtn2">
+                <button class="btn2"><a href="#helo"> SCROLL </a> </button>
+
+            </div>
+
+        </span>
+
+</section>
+
+
+
+
+
+
+<div class="con1">
+
+
+
+    <nav>
+
+        <div class="logo"> <a class="Login" href="Login Page.html"><img src="Login Page/logo.png" alt=""></a></div>
+
+        <ul>
+            <li><a class="bottom-border" href="#">Home</a></li>
+            <li><a class="bottom-border" href="#">Content</a></li>
+            <li><a class="bottom-border" href="#">Gallery</a></li>
+            <li><a class="bottom-border" href="#">Feedback</a></li>
+            <li><a class="bottom-border" href="#">AboutMe</a></li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <section class="sec1" id="helo">
+
+
+
+        <span class="main-t" align="center">
+
+
+            <span align="center" class="intro"> A <span class="red">FAN</span>TASTIC <br> ODYSSEY </span>
+
+
+            <article class="login-box">
+
+                <form class="my-form">
+                    <section class="form-group">
+
+
+                        <input type="text" placeholder="USER" id="rohan" />
+
+                    </section>
+                    <br>
+
+                    <section class="form-group">
+
+
+                        <input type="password" placeholder="PASSWORD" id="rohan2" />
+
+                    </section>
+
+                    <br>
+
+
+                    <section class="submit">
+
+
+
+                        <div class="mbtn">
+
+
+                            <button type="button" value="Login" class="btn" onclick="javascript:validate(rohan.rohan2)">
+                                LOGIN </button>
+
+
+
+                        </div>
+
+                    </section>
+
+                </form>
+
+
+
+
+
+
+
+
+
+
+                <section>
+                    <script type="text/javascript">
+                        function validate() {
+                            if (document.getElementById("rohan").value == "kratos" &&
+                                document.getElementById("rohan2").value == "kratos") {
+                                alert("Correct Password");
+                                location.href = "Home Page.html";
+                            } else {
+                                alert("Incorrect Password");
+                                location.href = "#";
+                            }
+                        }
+
+                    </script>
+
+
+
+
+
+
+
+
+                </section>
+
+
+
+            </article>
+
+
+
+        </span>
+
+    </section>
+
+
+
+    </body>
+
+</html>

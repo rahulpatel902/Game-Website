@@ -1,0 +1,512 @@
+html {
+    scroll-behavior: smooth;
+    
+
+}
+
+*:hover {
+
+    user-select: none;
+
+
+
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Berzerker;
+
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+
+
+}
+
+
+
+nav .logo {
+    float: left;
+    font-size: 24px;
+    margin-left: -60px;
+
+}
+
+
+
+img {
+    width: 120px;
+    padding-top: 21px;
+
+
+
+}
+
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    opacity: 0;
+    
+   
+}
+
+
+nav ul li {
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+    
+
+
+
+
+
+
+
+
+
+
+}
+
+
+nav ul li a {
+    line-height: 50px;
+    color: rgb(255, 255, 255);
+    padding: 12px 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    letter-spacing: 1.5px;
+    text-shadow: 2.5px 1.5px 4px rgba(0, 0, 0, 0.3);
+
+
+
+}
+
+
+
+
+nav.black ul li a:focus {
+    outline: none;
+}
+
+
+/**nav animation**/
+
+
+.bottom-border {
+    text-decoration: none;
+    position: relative;
+
+
+}
+
+
+.bottom-border::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.39);
+    position: absolute;
+    bottom: 34%;
+    left: 50%;
+    border-radius: 10px;
+    transition: width 0.25s, left 0.25s;
+    transition-property: width, left;
+    transition-duration: 0.25s, 0.25s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+
+}
+
+.bottom-border:hover::after {
+    left: 0%;
+
+    width: 100%;
+}
+
+
+/**star**/
+
+
+/*** sec2***/
+
+
+section.sec2 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(21.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+
+
+
+
+section.sec2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+.sec2 span.intro2 {
+    margin: 0;
+    padding: 0;
+    top: -10px;
+  line-height: 80px;
+    font-size: 58px;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.80);
+    letter-spacing: 15px;
+    position: relative;
+
+
+}
+
+.main-t2 {
+    position: relative;
+   
+    
+   
+}
+
+
+
+.red2 {
+    color: rgb(141, 18, 18);
+
+
+}
+
+
+
+
+
+
+
+
+.btn2 {
+    font-family: Berzerker;
+    letter-spacing: 1.5px;
+    background-color: rgba(47, 36, 36, 0.65);
+    position: relative;
+    top: 20px;
+    list-style: none;
+    width: 125px;
+    padding-top: 5px;
+    height: 45px;
+    border: none;
+    color: #ffffff;
+    border-radius: 50px;
+    transition: ease-out 0.3s;
+    font-size: 20.5px;
+    outline: none;
+    border: 2px solid rgba(217, 217, 217, 0.92);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.79);
+    text-shadow: 3px 2px 8px rgb(0, 0, 0);
+   
+
+}
+
+.btn2 a {
+   text-decoration: none;
+     color: #ffffff;
+   
+}
+
+.btn2:hover {
+    color: #cdd2db;
+    cursor: pointer;
+
+    box-shadow: 1px 1.5px 2px rgba(0, 0, 0, 0.10);
+
+    text-shadow: 2px 2px 5px rgb(0, 0, 0, 0.55);
+
+    background-color: rgba(21, 20, 20, 0.10);
+
+    border: 2px solid rgba(248, 248, 248, 0.88);
+}
+
+
+
+
+/**sec1**/
+
+section.sec1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(22a.jpg);
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+
+
+
+
+section.sec1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+section span.intro {
+    margin: 0;
+    padding: 0;
+    top: -40px;
+
+    font-size: 54px;
+    color: #ffffff;
+    text-shadow: 3px 2px 8px rgba(0, 0, 0, 0.79);
+    letter-spacing: 15px;
+    position: relative;
+
+
+}
+
+
+
+
+.red {
+    color: rgb(137, 0, 0);
+
+
+}
+
+
+
+
+.mbtn {
+    top: 22px;
+
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+
+
+
+.btn {
+    font-family: Berzerker;
+    letter-spacing: 1.5px;
+    background-color: rgba(47, 36, 36, 0.65);
+  
+    list-style: none;
+    width: 125px;
+    padding-top: 5px;
+    height: 45px;
+    border: none;
+    color: #ffffff;
+    border-radius: 50px;
+    transition: ease-out 0.3s;
+    font-size: 20.5px;
+    outline: none;
+    border: 2px solid rgba(217, 217, 217, 0.92);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.79);
+    text-shadow: 3px 2px 8px rgb(0, 0, 0);
+   
+
+}
+
+.btn a {
+   text-decoration: none;
+     color: #ffffff;
+
+   
+}
+
+.btn:hover {
+     color: #cdd2db;
+    cursor: pointer;
+
+    box-shadow: 1px 1.5px 2px rgba(0, 0, 0, 0.10);
+
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.97);
+
+    background-color: rgba(21, 20, 20, 0.10);
+
+    border: 2px solid rgba(248, 248, 248, 0.88);
+}
+
+
+
+.main-t {
+    position: relative;
+    left: -300px;
+   
+}
+
+
+.my-form .form-group {
+
+    position: relative;
+    margin: 20px;
+    top: 5px;
+}
+
+
+
+
+
+
+
+.my-form input{
+    padding-left: 65px;
+    padding-right: 65px;
+    font-family: Berzerker;
+    letter-spacing: 2px;
+    background-color: rgba(47, 36, 36, 0.65);
+    text-transform: uppercase;
+    list-style: none;
+    text-decoration: none;
+    width: 125px;
+    height: 45px;
+    border: none;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 50px;
+    transition: ease-out 0.3s;
+    font-size: 23px;
+    outline: none;
+    border: 2px solid rgba(217, 217, 217, 0.92);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.79);
+    text-shadow: 3px 2px 8px rgb(0, 0, 0);
+
+}
+
+ input:hover {
+    color: #cdd2db;
+    cursor: pointer;
+
+    box-shadow: 1px 1.5px 2px rgba(0, 0, 0, 0.10);
+
+    text-shadow: 2px 2px 5px rgb(0, 0, 0, 0.55);
+
+    background-color: rgba(21, 20, 20, 0.10);
+
+    border: 2px solid rgba(248, 248, 248, 0.88);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#con2
+{
+    width:100%;
+    height: 100vh;
+}
+
+
+#con2 div
+{
+    
+    width: 100%;
+    height: 100%;
+}
+
+#con2 div#GOW1
+{
+    
+   background-color: #4c676d;
+    background-image: url();
+}
+
+
+
+/** 01 **/
+
+
+
+#GOW1
+{
+    
+    background-image: url();
+    background-position:top;
+    background-size: cover;
+    background-repeat: no-repeat;
+      
+}
+ 
+
+#GOW1 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+      
+}
+
+
+#GOW1 span.intro
+{
+    margin: 0;
+    padding: 0;
+    margin-left: 500px;
+    font-size: 80px;
+    color: #ffffff;
+    text-shadow: 3.5px 2.5px 11px rgba(0,0,0,0.4);
+    letter-spacing: 15px;
+  
+}
+
+
+

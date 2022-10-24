@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Gallery Page</title>
+
+    <link rel="stylesheet" href="Gallery Page/Gallery Page.css" type="text/css" />
+    <link rel="icon" type="image/png" href="Icon/Favicon1.png" />
+
+    <script src="Gallery Page/js.js"></script>
+
+    <script type="text/javascript">
+        $(window).on("scroll", function() {
+            if ($(window).scrollTop()) {
+                $("nav").addClass("black");
+            } else {
+                $("nav").removeClass("black");
+            }
+        });
+
+    </script>
+</head>
+
+<body>
+    <div class="con1">
+        <nav>
+            <div class="logo">
+                <a class="Login" href="Login Page.html"><img src="Gallery Page/logo.png" alt="" /></a>
+            </div>
+
+            <ul>
+                <li>
+                    <a class="bottom-border" href="Home Page.html">Home</a>
+                </li>
+                <li>
+                    <a class="bottom-border" href="Content Page.html">Content</a>
+                </li>
+                <li>
+                    <a class="bottom-border" href="Gallery Page.html">Gallery</a>
+                </li>
+                <li>
+                    <a class="bottom-border" href="Feedback Page.html">Feedback</a>
+                </li>
+                <li>
+                    <a class="bottom-border" href="About Me Page.html">AboutMe</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="sec1">
+            <span class="main-t" align="center">
+                <span align="" class="intro">LET'S CLIMB TO <br />
+                    THE ARTWORK <br />
+                    OF <span class="red"><br />GOD OF WAR</span></span>
+
+                <div class="mbtn">
+                    <button class="btn">
+                        <a href="#GOW1"> SCROLL </a>
+                    </button>
+                </div>
+            </span>
+        </section>
+    </div>
+
+    <!-- 02-->
+
+    <div id="con2">
+        <div id="GOW1">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1" />
+                    <input type="radio" name="radio-btn" id="radio2" />
+                    <input type="radio" name="radio-btn" id="radio3" />
+                    <input type="radio" name="radio-btn" id="radio4" />
+
+                    <div class="slide first">
+                        <img src="Gallery Page/46.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="Gallery Page/14.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="Gallery Page/03.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="Gallery Page/67.jpg" alt="" />
+                    </div>
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+
+            <script type="text/javascript">
+                var counter = 1;
+                setInterval(function() {
+                    document.getElementById(
+                        "radio" + counter
+                    ).checked = true;
+                    counter++;
+                    if (counter > 4) {
+                        counter = 1;
+                    }
+                }, 5000);
+
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
